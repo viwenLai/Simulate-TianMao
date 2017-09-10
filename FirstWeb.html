@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset = "UTF-8">
+  <title>我的第一个网页</title>
+
+  <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="FirstWeb.css">
+  <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="FirstWeb.js"></script>
+</head>
+
+
+
+<body>
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" style="color: #FF3333;font-size: 13px">喵,欢迎来天猫</a>
+    </div>
+    <div>
+      <ul class="nav navbar-nav">
+        <li><a href="#">请登录</a></li>
+        <li><a href="#">免费注册</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right" style="margin-right: 1%">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">我的淘宝
+            <b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">已买到的宝贝</a></li>
+            <li><a href="#">已卖出的宝贝</a></li>
+          </ul>
+        </li>
+        <li><a href="#">
+          <span class="glyphicon glyphicon-heart" style="color: #FF3333; top: 2px; margin-right: 5px"></span>我关注的品牌
+        </a>
+        <li><a href="#">
+          <span class="glyphicon glyphicon-shopping-cart" style="color: #FF3333; top: 2px; margin-right: 5px"></span>购物车0件
+        </a>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" >收藏夹
+            <b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">收藏的宝贝</a></li>
+            <li><a href="#">收藏的店铺</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" >商家支持
+            <b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu">商家:
+            <li><a href="#">商家中心</a></li>
+            <li><a href="#">商家入驻</a></li>
+            <li><a href="#">运营服务</a></li>
+            <li><a href="#">商家品控</a></li>
+          </ul>
+        </li>
+        <li><a href="#">网站导航</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+<div style="position: relative">
+  <div class="input-group" style="position: relative; width: 500px; top: 35px; margin-left:auto; margin-right: auto">
+    <input type="text" class="form-control" placeholder="Search for..." style="border-radius: 0; border: 2px solid #FF3333; box-shadow: none">
+      <span class="input-group-btn">
+        <button style="width: 150px; border: 2px solid #FF3333; font-size: 20px; text-align: center; background-color: #FF3333; color: #FFFFFF">搜索</button>
+      </span>
+      <div style="position: absolute; left: 0; top: 50px">
+        <ul class="list-inline">
+          <li><a href="#" style="color: #FF3333">t恤男</a></li><span>|</span>
+          <li><a href="#">连衣裙</a></li><span>|</span>
+          <li><a href="#">夏凉被</a></li><span>|</span>
+          <li><a href="#" style="color: #FF3333">空调</a></li><span>|</span>
+          <li><a href="#">客厅灯</a></li><span>|</span>
+          <li><a href="#">防晒霜</a></li><span>|</span>
+          <li><a href="#" style="color: #FF3333">凉鞋</a></li><span>|</span>
+          <li><a href="#">双肩包</a></li><span>|</span>
+          <li><a href="#" style="color: #FF3333">驱蚊液</a></li>
+        </ul>
+      </div>
+  </div>
+  <div style="position: absolute; left: 0; top: -20px">
+    <a href="#">
+      <img class="media-object" src="Media.gif" alt="...">
+    </a>
+  </div>
+</div>
+
+
+
+<div style="position: relative; top: 76px">
+  <p style="display: block; width:16%; color: #FFFFFF; background-color: #CC0033; line-height: 30px; border: 2px solid #CC0033;
+   text-indent: 35px; font-size: 15px">商品分类</p>
+   <div class="position: absolute">
+     <span class="glyphicon glyphicon-th-list" style="color: #FFFFFF; top: -36px; left: 15px"></span>
+   </div>
+</div>
+<div class="btn-group btn-group-justified" role="group" style="background-color: #FF3333; top: 12px; margin-left: 16%; width: 84%">
+  <span class="glyphicon glyphicon-shopping-cart" style="color: #FFFFFF; top: 2px; margin-left: 30px"></span>
+  <button style="border: 2px solid #FF3333; font-size: 15px; text-align: center; background-color: #FF3333; color: #FFFFFF; height: 34px">天猫超市</button>
+  <span class="glyphicon glyphicon-globe" style="color: #FFFFFF; top: 2px"></span>
+  <button style="border: 2px solid #FF3333; font-size: 15px; text-align: center; background-color: #FF3333; color: #FFFFFF; height: 34px">天猫国际</button>
+  <button style="border: 2px solid #FF3333; font-size: 15px; text-align: center; background-color: #FF3333; color: #FFFFFF; height: 34px">天猫会员</button>
+  <button style="border: 2px solid #FF3333; font-size: 15px; text-align: center; background-color: #FF3333; color: #FFFFFF; height: 34px">品牌街</button>
+  <button style="border: 2px solid #FF3333; font-size: 15px; text-align: center; background-color: #FF3333; color: #FFFFFF; height: 34px">电器城</button>
+  <button style="border: 2px solid #FF3333; font-size: 15px; text-align: center; background-color: #FF3333; color: #FFFFFF; height: 34px">喵鲜生</button>
+  <button style="border: 2px solid #FF3333; font-size: 15px; text-align: center; background-color: #FF3333; color: #FFFFFF; height: 34px">医药馆</button>
+  <button style="border: 2px solid #FF3333; font-size: 15px; text-align: center; background-color: #FF3333; color: #FFFFFF; height: 34px">营业厅</button>
+  <button style="border: 2px solid #FF3333; font-size: 15px; text-align: center; background-color: #FF3333; color: #FFFFFF; height: 34px">魅力惠</button>
+  <button style="border: 2px solid #FF3333; font-size: 15px; text-align: center; background-color: #FF3333; color: #FFFFFF; height: 34px">飞猪旅行</button>
+  <button style="border: 2px solid #FF3333; font-size: 15px; text-align: center; background-color: #FF3333; color: #FFFFFF; height: 34px">苏宁易购</button>
+</div>
+
+
+
+<div>
+  <div style="position: relative; float: left; width: 16%; top: 12px">
+    <ul class="ilist list-unstyled" style="background-color: #F0F0F0">
+      <li><a href="#">女装 / 内衣</a></li>
+      <li><a href="#">男装 / 运动户外</a></li>
+      <li><a href="#">女鞋 / 男鞋 / 箱包</a></li>
+      <li><a href="#">化妆品 / 个人护理</a></li>
+      <li><a href="#">腕表 / 珠宝饰品 / 眼镜</a></li>
+      <li><a href="#">手机 / 数码 / 电脑办公</a></li>
+      <li><a href="#">母婴玩具</a></li>
+      <li><a href="#">零食 / 进口食品 / 茶酒</a></li>
+      <li><a href="#">生鲜水果</a></li>
+      <li><a href="#">大家电 / 生活电器</a></li>
+      <li><a href="#">家具建材</a></li>
+      <li><a href="#">汽车 / 配件 / 用品</a></li>
+      <li><a href="#">家纺 / 家饰 / 鲜花</a></li>
+      <li><a href="#">医药保健</a></li>
+      <li><a href="#">厨具 / 收纳 / 宠物</a></li>
+      <li><a href="#">图书音像</a></li>
+    </ul>
+  </div>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="4000" style="position: relative; float: left; width: 84%; top: 12px">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" style="height: 480px">
+      <div class="item active">
+        <img src="Carousel1.jpg" width="100%" alt="First slide">
+      </div>
+      <div class="item">
+        <img src="Carousel2.jpg" width="100%" alt="Second slide">
+      </div>
+      <div class="item">
+        <img src="Carousel3.jpg" width="100%" alt="Third slide">
+      </div>
+    </div>
+    <a class="carousel-control left" href="#myCarousel" data-slide="prev">‹</a>
+    <a class="carousel-control right" href="#myCarousel" data-slide="next">›</a>
+  </div>
+</div>
+
+
+
+<div class="container">
+  <div class="row" style="float: left; margin-top: 50px">
+    <div class="col-md-3">
+      <a href="#" onmouseover="mOver(this)" onmouseout="mOut(this)" class="thumbnail" style="border-radius: 0; cursor: pointer">
+        <img src="Commodity1.jpg" alt="...">
+        <div class="caption">
+          <p>Gree/格力 KFR-35GW/(35559)FNAc-A3大1.5匹变频冷暖智能空调挂机</p>
+          <p style="color: #FF3333; display: inline; font-size: 18px">¥</p>
+          <p style="color: #FF3333; font-size: 20px; display: inline; margin-left: 1px">3499.0</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-3">
+      <a href="#" onmouseover="mOver(this)" onmouseout="mOut(this)" class="thumbnail" style="border-radius: 0; cursor: pointer">
+        <img src="Commodity2.jpg" alt="...">
+        <div class="caption">
+          <p>【官网价直降】Apple/苹果 iPhone 7 Plus 移动联通4G智能手机</p>
+          <p style="color: #FF3333; display: inline; font-size: 18px">¥</p>
+          <p style="color: #FF3333; font-size: 20px; display: inline; margin-left: 1px">5678.0</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-3">
+      <a href="#" onmouseover="mOver(this)" onmouseout="mOut(this)" class="thumbnail" style="border-radius: 0; cursor: pointer">
+        <img src="Commodity3.jpg" alt="...">
+        <div class="caption">
+          <p>2017新款Apple iPad 9.7英寸苹果平板电脑 32G/128G WiFi版A9芯片</p>
+          <p style="color: #FF3333; display: inline; font-size: 18px">¥</p>
+          <p style="color: #FF3333; font-size: 20px; display: inline; margin-left: 1px">2588.0</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-3">
+      <a href="#" onmouseover="mOver(this)" onmouseout="mOut(this)" class="thumbnail" style="border-radius: 0; cursor: pointer">
+        <img src="Commodity4.jpg" alt="...">
+        <div class="caption">
+          <p>【官方旗舰店】Kindle Paperwhite3亚马逊电子书阅读器电纸书</p>
+          <p style="color: #FF3333; display: inline; font-size: 18px">¥</p>
+          <p style="color: #FF3333; font-size: 20px; display: inline; margin-left: 1px">958.0</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-3">
+      <a href="#" onmouseover="mOver(this)" onmouseout="mOut(this)" class="thumbnail" style="border-radius: 0; cursor: pointer">
+        <img src="Commodity5.jpg" alt="...">
+        <div class="caption">
+          <p>Asus/华硕 顽石4代 -FL5900笔记本电脑轻薄便携15.6英寸游戏本i7</p>
+          <p style="color: #FF3333; display: inline; font-size: 18px">¥</p>
+          <p style="color: #FF3333; font-size: 20px; display: inline; margin-left: 1px">4599.0</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-3">
+      <a href="#" onmouseover="mOver(this)" onmouseout="mOut(this)" class="thumbnail" style="border-radius: 0; cursor: pointer">
+        <img src="Commodity6.jpg" alt="...">
+        <div class="caption">
+          <p>Dyson戴森 吹风机 Supersonic HD01 紫红色</p>
+          <p style="color: #FF3333; display: inline; font-size: 18px">¥</p>
+          <p style="color: #FF3333; font-size: 20px; display: inline; margin-left: 1px">2990.0</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-3">
+      <a href="#" onmouseover="mOver(this)" onmouseout="mOut(this)" class="thumbnail" style="border-radius: 0; cursor: pointer">
+        <img src="Commodity7.jpg" alt="...">
+        <div class="caption">
+          <p>Haier/海尔 BCD-572WDENU1 572升WIFI智能变频风冷无霜对开门冰箱</p>
+          <p style="color: #FF3333; display: inline; font-size: 18px">¥</p>
+          <p style="color: #FF3333; font-size: 20px; display: inline; margin-left: 1px">3699.0</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-3">
+      <a href="#" onmouseover="mOver(this)" onmouseout="mOut(this)" class="thumbnail" style="border-radius: 0; cursor: pointer">
+        <img src="Commodity8.jpg" alt="...">
+        <div class="caption">
+          <p>Xiaomi/小米 小米电视4A 55英寸 4k超高清液晶智能语音电视机</p>
+          <p style="color: #FF3333; display: inline; font-size: 18px">¥</p>
+          <p style="color: #FF3333; font-size: 20px; display: inline; margin-left: 1px">2999.0</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-3">
+      <a href="#" onmouseover="mOver(this)" onmouseout="mOut(this)" class="thumbnail" style="border-radius: 0; cursor: pointer">
+        <img src="Commodity9.jpg" alt="...">
+        <div class="caption">
+          <p>Nike 耐克官方 NIKE AIR VAPORMAX FLYKNIT 女子跑步鞋 849557</p>
+          <p style="color: #FF3333; display: inline; font-size: 18px">¥</p>
+          <p style="color: #FF3333; font-size: 20px; display: inline; margin-left: 1px">1599.0</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-3">
+      <a href="#" onmouseover="mOver(this)" onmouseout="mOut(this)" class="thumbnail" style="border-radius: 0; cursor: pointer">
+        <img src="Commodity10.jpg" alt="...">
+        <div class="caption">
+          <p>科沃斯地宝灵犀扫地机器人吸尘器智能家用超薄全自动洗擦地机拖地</p>
+          <p style="color: #FF3333; display: inline; font-size: 18px">¥</p>
+          <p style="color: #FF3333; font-size: 20px; display: inline; margin-left: 1px">1299.0</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-3">
+      <a href="#" onmouseover="mOver(this)" onmouseout="mOut(this)" class="thumbnail" style="border-radius: 0; cursor: pointer">
+        <img src="Commodity11.jpg" alt="...">
+        <div class="caption">
+          <p>Nike 耐克官方 NIKE TANJUN 男子运动休闲鞋 812654</p>
+          <p style="color: #FF3333; display: inline; font-size: 18px">¥</p>
+          <p style="color: #FF3333; font-size: 20px; display: inline; margin-left: 1px">499.0</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-3">
+      <a href="#" onmouseover="mOver(this)" onmouseout="mOut(this)" class="thumbnail" style="border-radius: 0; cursor: pointer">
+        <img src="Commodity12.jpg" alt="...">
+        <div class="caption">
+          <p>方太EMD6T+HT8BE欧式云魔方顶吸抽油烟机燃气灶一级能效烟灶套装</p>
+          <p style="color: #FF3333; display: inline; font-size: 18px">¥</p>
+          <p style="color: #FF3333; font-size: 20px; display: inline; margin-left: 1px">5870.0</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
+<div style="text-align: center; margin-top: 40px">
+  <ul class="pagination">
+    <li><a href="#">«</a></li>
+    <li><a class="active" href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">...</a></li>
+    <li><a href="#">»</a></li>
+  </ul>
+</div>
+
+
+
+<div style="margin-top: 30px; width: 100%; height: 80px; background-color: #F0F0F0; border-bottom: 1px solid #D8D8D8"></div>
+
+<div class="container">
+  <div class="row" style="margin-top: 100px">
+    <div class="col-md-3">
+      <ul style="list-style-type: none">
+        <li><p style="font-size: 20px; color: black">购物指南</p></li>
+        <li><a href="#">免费注册</a></li>
+        <li><a href="#">开通支付宝</a></li>
+        <li><a href="#">支付宝充值</a></li>
+      </ul>
+    </div>
+
+    <div class="col-md-3">
+      <ul style="list-style-type: none">
+        <li><p style="font-size: 20px; color: black">天猫保障</p></li>
+        <li><a href="#">发票保障</a></li>
+        <li><a href="#">售后规则</a></li>
+        <li><a href="#">缺货赔付</a></li>
+      </ul>
+    </div>
+
+    <div class="col-md-3">
+      <ul style="list-style-type: none">
+        <li><p style="font-size: 20px; color: black">支付方式</p></li>
+        <li><a href="#">快捷支付</a></li>
+        <li><a href="#">信用卡</a></li>
+        <li><a href="#">余额宝</a></li>
+        <li><a href="#">蚂蚁花呗</a></li>
+        <li><a href="#">货到付款</a></li>
+      </ul>
+    </div>
+
+    <div class="col-md-3">
+      <ul style="list-style-type: none">
+        <li><p style="font-size: 20px; color: black">商家服务</p></li>
+        <li><a href="#">商家入驻</a></li>
+        <li><a href="#">商家中心</a></li>
+        <li><a href="#">天猫智库</a></li>
+        <li><a href="#">天猫规则</a></li>
+        <li><a href="#">物流服务</a></li>
+        <li><a href="#">喵言喵语</a></li>
+        <li><a href="#">运营服务</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<div id="rightnav" class="navbar navbar-fixed-top navbar-inverse" role="navigation" style="margin-left: 97.5%; width: 2.5%; height: 100%">
+  <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li style="top: 130px">
+          <a class="spe" href="#">
+            <span class="glyphicon glyphicon-shopping-cart" style="right: 5px; color: #FF3333"></span><br/>
+            <span style="position:absolute; top:30px; left: 11px; font-size: 12px; color: white">购<br/>物<br/>车<br/></span>
+          </a>
+        </li>
+        <li style="top: 180px">
+          <a href="#" style="left: 1px; width: 2.5%">
+            <span class="glyphicon glyphicon-yen" style="right: 6px"></span>
+            <span class="tooltiptext">我的资产</span>
+          </a>
+        </li>
+        <li style="top: 180px">
+          <a href="#" style="left: 1px; width: 2.5%">
+            <span class="glyphicon glyphicon-heart-empty" style="right: 6px"></span>
+            <span class="tooltiptext">我关注的品牌</span>
+          </a>
+        </li>
+        <li style="top: 180px">
+          <a href="#" style="left: 1px; width: 2.5%">
+            <span class="glyphicon glyphicon-star-empty" style="right: 6px"></span>
+            <span class="tooltiptext">我的收藏</span>
+          </a>
+        </li>
+        <li style="top: 180px">
+          <a href="#" style="left: 1px; width: 2.5%">
+            <span class="glyphicon glyphicon-time" style="right: 6px"></span>
+            <span class="tooltiptext">我看过的</span>
+          </a>
+        </li>
+        <li style="top: 270px">
+          <a href="#" style="left: 1px; width: 2.5%">
+            <span class="glyphicon glyphicon-edit" style=" right: 6px"></span>
+            <span class="tooltiptext">用户反馈</span>
+          </a>
+        </li>
+        <li style="top: 270px">
+          <a id="gotoTop" href="#" style="left: 1px; width: 2.5%; display: block">
+            <span class="glyphicon glyphicon-arrow-up" style=" right: 8px"></span>
+            <span class="tooltiptext">返回顶部</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+</body>
+</html>

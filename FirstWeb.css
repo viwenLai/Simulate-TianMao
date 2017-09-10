@@ -1,0 +1,119 @@
+a {
+  text-align: center;
+}
+
+a:hover {
+  color: #FF3333!important;
+  text-decoration: none!important;
+}
+
+.ilist li {
+  position: relative!important;
+  transition: all 0.5s!important;
+  padding-top: 5px!important;
+  padding-bottom: 5px!important;
+}
+
+.ilist li:hover {
+  background-color: #FF3333!important;
+}
+
+.ilist li a {
+  padding-left: 20px!important;
+  transition: 0.5s!important;
+  color: #000000!important;
+}
+
+.ilist li a:after {
+  content:'»'!important;
+  position:absolute!important;
+  opacity:0!important;
+  top:4px!important;
+  right:20px!important;
+  transition:0.5s!important;
+}
+
+.ilist li:hover a {
+  color:#FFFFFF!important;
+  padding-left: 30px!important;
+}
+
+.ilist li:hover a:after {
+  opacity:1!important;
+  right:25px!important;
+  color:#FFFFFF!important;
+}
+
+ul.pagination {
+  display: inline-block!important;
+  padding: 0!important;
+  margin: 0!important;
+}
+
+ul.pagination li {
+  display: inline!important;
+}
+
+ul.pagination li a {
+  color: black!important;
+  float: left!important;
+  border-style: none!important;
+  padding: 8px 16px!important;
+  text-decoration: none!important;
+  transition: background-color 1s!important;
+}
+
+ul.pagination li a.active {
+  background-color: #FF3333!important;
+  color: white!important;
+}
+
+ul.pagination li a:hover:not(.active) {
+  background-color: #FF3333!important;
+  color: white!important;
+}
+
+.row ul li {
+  padding: 2px!important;
+}
+
+.row ul li a {
+  color: #707070!important;
+}
+
+#rightnav ul li a:hover:not(.spe) {
+  background-color: #FF3333!important;
+  color: white!important;
+}
+
+.tooltiptext {
+  visibility: hidden!important;
+  opacity: 0!important;
+  width: 100px!important;
+  background-color: #606060!important;
+  color: #FFF!important;
+  text-align: center!important;
+  padding: 5px 0!important;
+  position: absolute!important;
+  z-index: 1!important;
+  top: 9px!important;
+  right: 200%!important;
+  transition: all .3s!important;
+}
+
+.tooltiptext::after {
+  content: ""!important;
+  position: absolute!important;
+  top: 50%!important;
+  left: 100%!important;
+  margin-top: -5px!important;
+  border-width: 5px!important;
+  border-style: solid!important;
+  border-color: transparent transparent transparent #606060!important;
+}
+
+#rightnav ul li a:hover .tooltiptext {
+  visibility: visible!important;
+  right: 100%!important;
+  opacity: 1!important;
+}
